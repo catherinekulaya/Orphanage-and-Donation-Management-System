@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Online Orphanage Donation</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                
+
             }
 
             .full-height {
@@ -97,7 +97,7 @@ color: white;"  href="{{ route('login') }}">Login</a>
 color: white;"  href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
-               
+
             @endif
             <a style="
 color: white;"  href="{{ url('/about-us') }}">ABOUT-US</a>
@@ -105,7 +105,7 @@ color: white;"  href="{{ url('/about-us') }}">ABOUT-US</a>
 color: white;" href="{{url('/service')}}">SERVICE</a>
             </div>
             <div class="links">
-                   
+
                     <!-- <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
@@ -117,9 +117,9 @@ color: white;" href="{{url('/service')}}">SERVICE</a>
 
 
             <div class="welcome">
-              
+
                  <marquee >   <h2 style="color: #c8c4c4;"><strong style="font-size: 59px;">Welcome to donate!</strong></h2></marquee>
-            
+
             </div>
 
             <!-- <div class="content">

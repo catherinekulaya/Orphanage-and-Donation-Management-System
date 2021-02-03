@@ -10,7 +10,11 @@
     <title>{{ config('app.name', 'ORPHANAGE') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/moment.js') }}"></script>
+    <script src="{{ asset('js/chart.js') }}"></script>
+
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,8 +23,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -58,7 +64,7 @@
                             <a class="nav-link" href="#">Donations</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Centers</a>
+                            <a class="nav-link" href="#">Schedule</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Items Requested</a>
@@ -92,5 +98,12 @@
             @yield('content')
         </main>
     </div>
+ <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
+ <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
 </body>
 </html>

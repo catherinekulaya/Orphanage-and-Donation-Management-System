@@ -26,6 +26,9 @@ Route::get('/about-us',function(){
 Route::get('/service',function(){
     return view('service');
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/payments', 'PaymentController@index')->name('payment');
+

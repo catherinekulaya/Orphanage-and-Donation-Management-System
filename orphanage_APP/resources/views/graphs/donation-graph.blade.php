@@ -1,7 +1,7 @@
-<canvas id="myChart" width="400" height="50"></canvas>
+<canvas id="donationChart" width="400" height="50"></canvas>
 
 <script>
-    var ctx = document.getElementById('myChart');
+    var ctx = document.getElementById('donationChart');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {

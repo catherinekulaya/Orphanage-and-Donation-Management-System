@@ -84,21 +84,6 @@ padding-top: 18px;
 position: fixed;
 top: 0px;">
 
-            @if (Route::has('login'))
-                    @auth
-                        <a style="
-color: white;" href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a style="
-color: white;"  href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a style="
-color: white;"  href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-
-            @endif
             <a style="
 color: white;"  href="{{ url('/about-us') }}">ABOUT-US</a>
                     <a style="

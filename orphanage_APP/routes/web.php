@@ -34,4 +34,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
-Route::get('/donationpage', 'DonationsController@index')->name('donationpage');
+Route::get('/donations', 'DonationsController@index')->name('donations');

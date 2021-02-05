@@ -11,7 +11,7 @@
     </div>
   </div>
 <br>
-  <table class="table table-hover table-bordered">
+  <table class="table table-hover table-bordered table-responsive-sm">
     <thead>
       <tr>
         <th scope="col">No</th>

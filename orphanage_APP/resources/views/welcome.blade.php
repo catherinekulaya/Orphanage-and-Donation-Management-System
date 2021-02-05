@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>ORPHANAGE DONATION MANAGEMENT SYSTEM</title>
+        <title>ORPHANAGE AND DONATION MANAGEMENT SYSTEM</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -67,9 +67,14 @@
             }
 
             .welcome h1{
-                font-size:72px;
-                font-weight:800;
-                color:red;
+                font-size:10px;
+                font-weight:100;
+                color:rgb(255, 255, 255);
+                text-align:left;
+                allign: left;
+            }
+            .welcome h2{
+                text-align: center;
             }
 
             body {
@@ -94,7 +99,7 @@ a {
   border-radius: 4px;
   color: #fff;
   padding: 15px 65px 15px 15px;
-  left: 450px;
+  left: 600px;
   top:45px;
   text-shadow: 1px 1px 5px #666;
   -webkit-transition: all 800ms;
@@ -135,11 +140,12 @@ width: -moz-available;
 text-align: -moz-right;
 height: 50px;
 padding-top: 18px;
-position: fixed;
-top: 0px;">
+position: fixed;">
+
 
             @if (Route::has('login'))
                     @auth
+
                         <a style="
 color: white;" href="{{ url('/home') }}">Home</a>
                     @else
@@ -172,8 +178,8 @@ color: white;" href="{{url('/service')}}">SERVICE</a>
 
             <div class="welcome">
 
-                <h2 style="color: #ffffff;"><strong style="font-size: 40px;">Welcome to Orphanage Donation Management System!</h2>
-
+                <marquee width="100%" direction="left" height="100px"style="color: #ff0000;"><strong style="font-size: 40px;">Welcome to Orphanage and Donation Management System!</marquee>
+<h2 style="color: #ffffff;"><strong style="font-size: 23px;">Orphanage and Donation Management System is an online system that aims to digitize orphanage centers to conduct more reliable processes and management such as request for donations, easy donors payment through e-payments, system make process to be easy for Admins on management of Orphanage centers. </h2>
                         <a href="#" class="donate" class="after" style="color: #ff0000;href="><strong style="font-size: 50px;"> DONATE</a>
 
                 </div>

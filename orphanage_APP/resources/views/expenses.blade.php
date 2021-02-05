@@ -7,7 +7,7 @@
       <h4>Expenses</h4>
     </div>
     <div class="col-sm-2">
-      <a class="btn btn-primary" href="/expenses/create">Add Expense</a>
+      <a class="btn btn-primary btn-sm" href="/expenses/create">Add Expense</a>
     </div>
   </div>
 <br>
@@ -33,8 +33,8 @@
         <td> {{ $expense['date']}}</td>
         <td> {{ $expense['supervisedBy']}}</td>
         <td> 
-          <a class="btn btn-primary" href="/expenses/edit">Edit</a>
-          <a class="btn btn-danger">Delete</a>
+          <a class="btn btn-primary btn-sm" href="/expenses/edit/34">Edit</a>
+          <a class="btn btn-danger btn-sm">Delete</a>
         </td>
       </tr>
       @endforeach

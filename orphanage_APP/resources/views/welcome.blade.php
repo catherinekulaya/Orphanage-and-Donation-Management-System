@@ -85,7 +85,7 @@ a {
   display: inline-block;
   margin: 20px;
   position: relative;
-  text-decoration: none;
+  text-decoration: wheat;
 }
 
 .donate {
@@ -96,7 +96,7 @@ a {
               linear-gradient(to right, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
   background-position: 0 0;
   background-size: 200% 100%;
-  border-radius: 4px;
+  border-radius: 30px;
   color: #fff;
   padding: 15px 65px 15px 15px;
   left: 600px;

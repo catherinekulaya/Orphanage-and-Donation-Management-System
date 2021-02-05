@@ -32,5 +32,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
+Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
 
 

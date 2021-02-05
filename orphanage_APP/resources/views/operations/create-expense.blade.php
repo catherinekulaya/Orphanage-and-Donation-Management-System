@@ -11,6 +11,14 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
+                        <label>Expense Type</label>
+                        <select class="form-control">
+                          <option>Fixed Expenses</option>
+                          <option>Variable Expenses</option>
+                          <option>Periodic Expense</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label>Amount</label>
                         <input type="text" class="form-control">
                     </div>

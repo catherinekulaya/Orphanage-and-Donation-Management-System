@@ -10,6 +10,14 @@
                       <label>Expense Name</label>
                       <input type="text" class="form-control">
                     </div>
+                     <div class="form-group">
+                        <label>Expense Type</label>
+                        <select class="form-control">
+                          <option>Fixed Expenses</option>
+                          <option>Variable Expenses</option>
+                          <option>Periodic Expense</option>
+                        </select>
+                     </div>
                     <div class="form-group">
                         <label>Amount</label>
                         <input type="text" class="form-control">
@@ -22,8 +30,6 @@
                         <label>Description</label>
                         <textarea class="form-control"></textarea>
                     </div>
-                  
-                  
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
             </div>

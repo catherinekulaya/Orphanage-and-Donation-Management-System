@@ -17,15 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/donationform',function(){
+Route::get('donationform/', function () {
     return view('donationform');
 });
 
-Route::get('/about-us',function(){
+Route::get('/about-us', function () {
     return view('about-us');
 });
 
-Route::get('/service',function(){
+Route::get('/service', function () {
     return view('service');
 });
 
@@ -34,5 +34,3 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
-
-

@@ -32,4 +32,16 @@ class ExpensesController extends Controller
           ];
         return view('expenses', [ 'expenses' => $expenses]);
     }
+
+    public function create()
+    {
+      
+        return view('operations.create-expense');
+    }
+
+    public function update()
+    {
+      
+        return view('operations.edit-expense');
+    }
 }

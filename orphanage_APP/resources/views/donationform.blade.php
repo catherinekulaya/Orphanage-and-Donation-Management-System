@@ -355,7 +355,7 @@
 
                           </div>
 
-                          <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+                          <div class="donate-button"><i class="fa fa-credit-card"></i> Donate</div>
                       </div>
 
                   </div>

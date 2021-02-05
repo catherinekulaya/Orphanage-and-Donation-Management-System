@@ -9,6 +9,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 <!--Styles -->
+
+
+
         <style>
 
 
@@ -171,7 +174,7 @@
   left: 15px;
   margin: 20px auto;
   height: 26px;
-  width: 58.5%;
+  width: 55%;
   background: white;
   border-radius: 3px;
 }
@@ -213,7 +216,7 @@
   transition: 0.15s ease-out;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 114px;
+  left: 250px;
 }
 
 .switch-selection {
@@ -222,7 +225,7 @@
   z-index: 1;
   top: 2px;
   left: 2px;
-  width: 49%;
+  width: 55%;
   height: 22px;
   background: #65bd63;
   border-radius: 3px;
@@ -355,6 +358,8 @@
                       </div>
 
                   </div>
+
+
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
           <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>

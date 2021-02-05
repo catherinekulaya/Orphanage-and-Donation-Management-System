@@ -17,10 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/donationform',function(){
+    return view('donationform');
+});
+
 Route::get('/about-us',function(){
     return view('about-us');
 });
-
 
 Route::get('/service',function(){
     return view('service');

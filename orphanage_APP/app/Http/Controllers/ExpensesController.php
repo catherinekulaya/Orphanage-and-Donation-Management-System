@@ -38,4 +38,10 @@ class ExpensesController extends Controller
       
         return view('operations.create-expense');
     }
+
+    public function update()
+    {
+      
+        return view('operations.edit-expense');
+    }
 }

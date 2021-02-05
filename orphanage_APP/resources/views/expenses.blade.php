@@ -33,7 +33,7 @@
         <td> {{ $expense['date']}}</td>
         <td> {{ $expense['supervisedBy']}}</td>
         <td> 
-          <a class="btn btn-primary" href="/expenses/create">Edit</a>
+          <a class="btn btn-primary" href="/expenses/edit">Edit</a>
           <a class="btn btn-danger">Delete</a>
         </td>
       </tr>

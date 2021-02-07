@@ -35,3 +35,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
 Route::get('/donations', 'DonationsController@index')->name('donations');
+Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
+Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
+

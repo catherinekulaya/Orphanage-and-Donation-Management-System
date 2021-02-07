@@ -85,7 +85,7 @@ a {
   display: inline-block;
   margin: 20px;
   position: relative;
-  text-decoration: none;
+  text-decoration: wheat;
 }
 
 .donate {
@@ -93,10 +93,10 @@ a {
   background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
               -webkit-linear-gradient(left, lighten(#7e5959, 15%) 0%, #ff0000 50%, lighten(#00684d, 15%) 100%);
   background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),
-              linear-gradient(to right, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
+              linear-gradient(to right, lighten(#1eff00, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
   background-position: 0 0;
   background-size: 200% 100%;
-  border-radius: 4px;
+  border-radius: 30px;
   color: #fff;
   padding: 15px 65px 15px 15px;
   left: 600px;

@@ -90,17 +90,17 @@
 }
 
 ::-webkit-input-placeholder {
-   color: #cdcdcd;
+   color: #000000;
    font-size: 15px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #cdcdcd;
+   color: #000000;
    font-size: 15px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #cdcdcd;
+   color: #000000;
    font-size: 15px;
 }
 

@@ -353,6 +353,19 @@
 
                           <div class="confirm">
 
+
+                            @if(isset($donations))
+    @foreach($donations as $data)
+        <tr>
+            <td> {{$data->id}} </td>
+            <td> {{$data->firstname}} </td>
+            <td> {{$data->lastname}} </td>
+            <td> {{$data->amount}} </td>
+            <td> {{$data->email}} </td>
+         </tr>
+     @endforeach
+@endif
+
                           </div>
 
                           <div class="donate-button"><i class="fa fa-credit-card"></i> Donate</div>

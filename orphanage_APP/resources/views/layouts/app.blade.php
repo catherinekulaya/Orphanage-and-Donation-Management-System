@@ -68,7 +68,7 @@
                             <a class="nav-link" href="#">Schedule</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Items Requested</a>
+                            <a class="nav-link" href="/itemsrequested">Items Requested</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/expenses">Expenses</a>

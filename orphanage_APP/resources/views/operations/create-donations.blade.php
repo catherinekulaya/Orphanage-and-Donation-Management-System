@@ -33,13 +33,6 @@
                         <label>Email</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label>Incurred on</label>
-                        <input type="date" class="form-control">
-                    </div>
-
-
-
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
             </div>

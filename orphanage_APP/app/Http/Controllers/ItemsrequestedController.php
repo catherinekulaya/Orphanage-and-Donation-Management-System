@@ -14,6 +14,9 @@ class ItemsrequestedController extends Controller
             ['itemsrequested' => 'Food', 'orphanagecenter' => 'Watoto wetu',],
             ['itemsrequested' => 'Soap', 'orphanagecenter' => 'Yetu sote',],
             ['itemsrequested' => 'Tshirt', 'orphanagecenter' => 'Smile charity',],
+            ['itemsrequested' => 'Exercise books', 'orphanagecenter' => 'Azim charity',],
+            ['itemsrequested' => 'Pens', 'orphanagecenter' => 'Nchi yetu sote',],
+            ['itemsrequested' => 'Matrex', 'orphanagecenter' => 'Mimi na wewe',],
 
 
 

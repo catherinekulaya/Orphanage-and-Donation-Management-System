@@ -27,8 +27,15 @@ Route::get('/service',function(){
     return view('service');
 });
 
+Route::get('/test', function () {
+    return view('test');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');
 
+Route::get('/donations', 'DonationController@index')->name('donations');

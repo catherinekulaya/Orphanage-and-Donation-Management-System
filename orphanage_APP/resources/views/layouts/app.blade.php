@@ -61,7 +61,7 @@
                             <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Donations</a>
+                            <a class="nav-link" href="/donations">Donations</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Schedule</a>

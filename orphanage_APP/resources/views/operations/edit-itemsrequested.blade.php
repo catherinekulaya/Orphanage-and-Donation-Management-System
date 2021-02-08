@@ -11,7 +11,7 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label>Orphhanage center</label>
+                        <label>Orphanage center</label>
                         <input type="text" class="form-control">
 
                     <button type="submit" class="btn btn-primary">Submit</button>

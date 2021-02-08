@@ -21,6 +21,9 @@ Route::get('donationform/', function () {
     return view('donationform');
 });
 
+
+
+
 Route::get('/about-us', function () {
     return view('about-us');
 });
@@ -28,8 +31,6 @@ Route::get('/about-us', function () {
 Route::get('/service', function () {
     return view('service');
 });
-
-
 
 Auth::routes();
 

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class StudInsert extends Model
+class Donations extends Model
 {
     protected $table = 'donations_details';
     public $timestamps = true;

@@ -10,7 +10,7 @@ class Donor123Controller extends Controller
     public function index()
     {
         $donations = [
-            ['firstname' => 'Azizah', 'lastname' => 'Isack', 'amount' => '250,000', 'email' => 'zizerisack@gmail.com'],
+            ['firstname' => 'Carlos', 'lastname' => 'Mturi', 'amount' => '250,000', 'email' => 'carlosmturi@gmail.com'],
             ['firstname' => 'Arapha', 'lastname' => 'Benson', 'amount' => '750,000', 'email' => 'arapha3432@gmail.com'],
             ['firstname' => 'Benard', 'lastname' => 'Ally', 'amount' => '230,000', 'email' => 'ben478@gmail.com'],
             ['firstname' => 'Ian', 'lastname' => 'Isack', 'amount' => '25,000', 'email' => 'ianisack@gmail.com'],

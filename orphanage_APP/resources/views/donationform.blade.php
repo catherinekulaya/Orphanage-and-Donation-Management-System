@@ -290,7 +290,7 @@
 	position: absolute;
 	top: 335px;
 	left: 15px;
-	right: 15px;
+	right: 16px;
 	font-size: 16px;
 
 	-webkit-transition: all 0.15s ease-out;

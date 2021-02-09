@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('donationform/', function () {
     return view('donationform');
@@ -33,6 +33,9 @@ Route::get('/service', function () {
 });
 
 Auth::routes();
+Route::get('/', 'DonorController@index')->name('home');
+Route::get('/donate', 'DonorController@donateForm')->name('Make Donations');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');

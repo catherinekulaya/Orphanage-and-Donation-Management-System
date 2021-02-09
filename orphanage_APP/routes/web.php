@@ -17,15 +17,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('donationform/', function () {
+    return view('donationform');
+});
 
-Route::get('/about-us',function(){
+
+
+
+Route::get('/about-us', function () {
     return view('about-us');
 });
 
-
-Route::get('/service',function(){
+Route::get('/service', function () {
     return view('service');
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/payments', 'PaymentController@index')->name('payment');
+Route::get('/expenses', 'ExpensesController@index')->name('expenses');
+Route::get('/donations', 'Donor123Controller@index')->name('donations');
+Route::get('/itemsrequested', 'ItemsrequestedController@index')->name('itemsrequested');
+
+Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
+Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
+
+Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
+Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');
+
+Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
+Route::get('/itemsrequested/edit/{id}', 'ItemsrequestedController@update')->name('edit-itemsrequested');

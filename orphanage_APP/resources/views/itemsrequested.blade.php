@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -6,10 +5,10 @@
 <div class="home-container table-responsive-sm">
     <div class="row">
         <div class="col-sm-10">
-    <h4>Donations</h4>
+    <h4>Items requested</h4>
         </div>
         <div class="col-sm-2">
-            <a class="btn btn-primary btn-sm" href="/donations/create">Add Donations</a>
+            <a class="btn btn-primary btn-sm" href="/itemsrequested/create">Add Item</a>
         </div>
     </div>
     <br>
@@ -17,23 +16,20 @@
     <thead>
         <tr>
             <th scope="col">No</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Email</th>
+            <th scope="col">Items requested</th>
+            <th scope="col">Orphanage center</th>
             <th scope="col">Options</th>
+
         </tr>
         <thead>
             <tbody>
-                @foreach($donations as $donation)
+                @foreach($itemsrequested as $itemrequest)
                 <tr>
                     <th scope="row"> {{$loop->index+1 }}</th>
-                    <td> {{$donation['firstname']}}</td>
-                    <td> {{$donation['lastname']}}</td>
-                    <td> {{$donation['amount']}}</td>
-                    <td> {{$donation['email']}}</td>
+                    <td> {{$itemrequest['itemsrequested']}}</td>
+                    <td> {{$itemrequest['orphanagecenter']}}</td>
                     <td>
-                <a class="btn btn-primary btn-sm" href="/donations/edit/98">Edit</a>
+                <a class="btn btn-primary btn-sm" href="/itemsrequested/edit/77">Edit</a>
            <a class="btn btn-danger btn-sm">Delete</a>
             </td>
           </tr>
@@ -42,5 +38,4 @@
         </table>
     </div>
     @endsection
-
 

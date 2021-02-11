@@ -58,16 +58,20 @@
                             @endif
                         @else
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/home">Dashboard <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/donations">Donations</a>
+
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Schedule</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Items Requested</a>
+                            <a class="nav-link" href="/itemsrequested">Items Requested</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/expenses">Expenses</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/payments">Payments</a>

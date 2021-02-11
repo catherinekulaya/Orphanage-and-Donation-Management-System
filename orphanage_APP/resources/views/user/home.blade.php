@@ -34,7 +34,7 @@
     <br>
     <div class="row align-items-center center">
         <div class="col">
-            <button type="button" class="btn btn-primary  donation-btn btn-sm">View Items Required</button>
+            <a href="/requiredItems" class="btn btn-primary  donation-btn btn-sm">View Items Required</a>
         </div>
     </div>
 </div>

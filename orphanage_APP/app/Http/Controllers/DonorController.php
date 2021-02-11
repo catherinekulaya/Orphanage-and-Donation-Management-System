@@ -16,4 +16,9 @@ class DonorController extends Controller
         return view('user.donate');
     }
 
+    public function donateRequiredForm($item)
+    {
+        return view('user.donateRequiredItem', [ 'item' => $item]);
+    }
+
 }

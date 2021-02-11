@@ -9,6 +9,11 @@
                     <h3 class="center">Make Donation</h3>
                     <form>
                         <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control">
+                            <small class="form-text text-muted">Optional</small>
+                          </div>
+                        <div class="form-group">
                             <label>Donation Type</label>
                             <select id="donationType" onclick="getType()" class="form-control">
                               <option></option>
@@ -46,10 +51,6 @@
 </div>
 
 <script>
-    function getType() {
-        const donationType = document.getElementById('donationType').innerHTML
-    console.log(donationType);
-    }
 
 </script>
 

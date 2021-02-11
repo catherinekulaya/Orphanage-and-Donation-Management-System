@@ -35,7 +35,8 @@ Route::get('/service', function () {
 Auth::routes();
 Route::get('/', 'DonorController@index')->name('home');
 Route::get('/donate', 'DonorController@donateForm')->name('Make Donations');
-
+Route::get('/donaterequired/{items}', 'DonorController@donateRequiredForm')->name('Donate Required Item');
+Route::get('/requiredItems', 'ItemsRequiredController@index')->name('Items Required');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');

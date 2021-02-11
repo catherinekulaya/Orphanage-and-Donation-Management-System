@@ -32,6 +32,12 @@ Route::get('/service', function () {
     return view('service');
 });
 
+Route::get('/test', function () {
+    return view('test');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -46,5 +52,9 @@ Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expen
 Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
 Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');
 
+
 Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
 Route::get('/itemsrequested/edit/{id}', 'ItemsrequestedController@update')->name('edit-itemsrequested');
+
+Route::get('/donations', 'DonationController@index')->name('donations');
+

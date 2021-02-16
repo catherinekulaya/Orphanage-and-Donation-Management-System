@@ -14,8 +14,10 @@
             </div>
         </div>
         @if (session('response'))
-            <div class="row">
-                <div class="alert alert-success col-sm-10" id="success-alert" role="alert">
+            <div class="row center">
+                <div class="col-sm-3">
+                </div>
+                <div class="alert alert-success col-sm-5" id="success-alert" role="alert">
                     {{ session('response') }}
                 </div>
             </div>
@@ -25,15 +27,6 @@
             $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
                 $("#success-alert").slideUp(500);
             });
-
-            $(document).ready(function() {
-
-                $("#showToast").click(function() {
-                    $('.toast').toast('show');
-                });
-
-            });
-
         </script>
 
         <br>
@@ -60,12 +53,11 @@
                                         href="/itemsrequested/edit/{{ $item->id }}">Edit</a> &nbsp;
                                     <form class="form-size" action="/itemsrequested/delete/{{ $item->id }}"
                                         method="POST">
-                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete?')">Delete</button>
                                         @csrf
                                         @method('DELETE')
                                     </form>
                                 </div>
-
                             </td>
                         </tr>
                     @endforeach

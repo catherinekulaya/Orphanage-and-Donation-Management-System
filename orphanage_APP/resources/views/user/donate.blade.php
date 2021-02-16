@@ -7,38 +7,40 @@
             <div class="card">
                 <div class="card-body">
                     <h3 class="center">Make Donation</h3>
-                    <form>
+                    <form action = "/submit" method = "POST">
+                    @csrf
+
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control">
+                            <input name="name" type="text" class="form-control">
                             <small class="form-text text-muted">Optional</small>
                           </div>
                         <div class="form-group">
                             <label>Donation Type</label>
                             <select id="donationType" onclick="getType()" class="form-control">
                               <option></option>
-                              <option value="Money">Money</option>
-                              <option value="Item">Item</option>
+                              <option name="money" value="Money">Money</option>
+                              <option  value="Item">Item</option>
                             </select>
                         </div>
                         <div class="form-group" id="item_name">
                           <label>Item Name</label>
-                          <input type="text" class="form-control" value="">
+                          <input name="item" type="text" class="form-control">
                         </div>
                         <div class="form-group" id="amount">
                             <label>Amount</label>
-                            <input type="text" class="form-control">
+                            <input name="money" type="text" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Donation Date</label>
-                            <input type="date" class="form-control">
+                            <input name="donationDate" type="date" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Description</label>
-                            <textarea class="form-control"></textarea>
+                            <textarea name="description" class="form-control"></textarea>
                         </div>
                         <div class="center">
-                            <a href="/"  class="btn btn-primary">Cancel</a>
+                            <a href="/"  class="btn btn-primary">C ancel</a>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
 

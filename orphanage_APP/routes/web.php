@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DonateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,5 +60,7 @@ Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-dona
 Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
 Route::get('/itemsrequested/edit/{id}', 'ItemsrequestedController@update')->name('edit-itemsrequested');
 
-Route::get('/donations', 'DonationController@index')->name('donations');
+Route::get('form','DonateController@index');
+Route::post('/submit','DonateController@store');
 
+ 

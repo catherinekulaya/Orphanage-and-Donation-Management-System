@@ -2,6 +2,12 @@
 
 @section('content')
 
+@if(\Session::has('msg'))
+  <div class="alert alert-success">
+    {{Session('msg')}}
+   </div>
+  @endif
+
     <div class="home-container">
         <div class="card">
             <div class="card-body">
@@ -34,7 +40,17 @@
                         <td>{{$donation->donationDate}}</td>
                         <td>
                           <a class="btn btn-primary btn-sm" href="/donate">Edit</a>
-                          <a class="btn btn-danger btn-sm">Delete</a>
+                          <a class="btn btn-danger btn-sm" href="#" onclick="
+                            
+                              if(confirm('Are you sure you want to delete this?')){
+                              getElementById('delete-donation-{{$donation->id}}').submit();
+                            }
+                            
+                            ">Delete</a>
+                          <form id="delete-donation-{{$donation->id}}" action="{{route('remove-donation',$donation->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                          </form>
                         </td>
                      </tr>
                      

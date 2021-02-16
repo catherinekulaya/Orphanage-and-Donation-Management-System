@@ -25,4 +25,11 @@ class DonateController extends Controller
 
         return view('operations.view-donations',compact('donations'));
     }
+
+    public function delete($id){
+        $donation = Donate::find($id);
+        $donation->delete();
+
+        return back()->with('msg','deleted successfully');
+}
 }

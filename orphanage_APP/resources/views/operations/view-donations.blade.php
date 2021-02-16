@@ -10,7 +10,14 @@
     <div class="home-container">
         <div class="card">
             <div class="card-body">
-                <h3 class="center">View Donations</h3>
+            <div class="row">
+            <div class="col-sm-10">
+                <h3 class="left">View Donations</h3>
+                </div>
+                <div class="col-sm-2">
+            <a class="btn btn-primary btn-sm" href="/donations/create">Add Donations</a>
+        </div>
+                </div>
                 <table class="table table-bordered table-hover">
                    <thead>
                     <tr>

@@ -6,6 +6,12 @@
 
 <div class="content">
 
+@if(\Session::has('msg'))
+  <div class="alert alert-success">
+    {{Session('msg')}}
+   </div>
+  @endif
+  
     <div class="row align-items-center">
         <div class="col">
             <p class="h2" style="text-align: center">Orphanage Donation Management System</p>

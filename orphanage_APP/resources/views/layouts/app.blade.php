@@ -62,7 +62,7 @@
                             <a class="nav-link" href="/home">Dashboard <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/donations">Donations</a>
+                            <a class="nav-link" href="/view_donations">Donations</a>
 
                           </li>
                           <li class="nav-item">

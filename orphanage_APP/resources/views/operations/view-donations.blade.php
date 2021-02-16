@@ -2,11 +2,6 @@
 
 @section('content')
 
-  @if(\Session::has('msg'))
-  <div class="alert alert-success">
-    {{Session('msg')}}
-   </div>
-  @endif
     <div class="home-container">
         <div class="card">
             <div class="card-body">
@@ -15,7 +10,7 @@
                 <h3 class="left">View Donations</h3>
                 </div>
                 <div class="col-sm-2">
-            <a class="btn btn-primary btn-sm" href="/donations/create">Add Donations</a>
+            <a class="btn btn-primary btn-sm" href="/donate">Add Donations</a>
         </div>
                 </div>
                 <table class="table table-bordered table-hover">
@@ -38,7 +33,7 @@
                         <td>{{$donation->money}}</td>
                         <td>{{$donation->donationDate}}</td>
                         <td>
-                          <a class="btn btn-primary btn-sm" href="/donations/edit/98">Edit</a>
+                          <a class="btn btn-primary btn-sm" href="/donate">Edit</a>
                           <a class="btn btn-danger btn-sm">Delete</a>
                         </td>
                      </tr>

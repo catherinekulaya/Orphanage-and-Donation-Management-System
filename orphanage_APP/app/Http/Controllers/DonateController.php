@@ -16,7 +16,7 @@ class DonateController extends Controller
         $donate->description = $req->description;
         $donate->save();
 
-        return redirect('/view_donations')->with('msg','Donation added successfully');
+        return redirect('/')->with('msg','Donation added successfully');
     }
 
     public function retrieve(){

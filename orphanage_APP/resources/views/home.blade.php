@@ -14,7 +14,7 @@
             <div class="col-sm">
                 <div class="card" >
                     <div class="card-body">
-                        <h5 class="card-title"><a href="/donations">Donations</a></h5>
+                        <h5 class="card-title"><a href="/view_donations">Donations</a></h5>
                         <h6 class="card-subtitle mb-2 text-muted">1430</h6>
                     </div>
                 </div>

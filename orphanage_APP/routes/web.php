@@ -63,4 +63,6 @@ Route::get('/itemsrequested/edit/{id}', 'ItemsrequestedController@update')->name
 Route::get('form','DonateController@index');
 Route::post('/submit','DonateController@store');
 
+Route::get('/view_donations', 'DonateController@retrieve');
+
  

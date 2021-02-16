@@ -15,5 +15,14 @@ class DonateController extends Controller
         $donate->donationDate = $req->donationDate;
         $donate->description = $req->description;
         $donate->save();
+
+        return redirect('/view_donations')->with('msg','Donation added successfully');
+    }
+
+    public function retrieve(){
+        
+        $donations = Donate::all();
+
+        return view('operations.view-donations',compact('donations'));
     }
 }

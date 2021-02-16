@@ -17,8 +17,8 @@
     <thead>
         <tr>
             <th scope="col">No</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
+            <th scope="col">Name</th>
+            <th scope="col">Item</th>
             <th scope="col">Amount</th>
             <th scope="col">Email</th>
             <th scope="col">Options</th>

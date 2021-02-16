@@ -18,6 +18,7 @@
                         <th>Name</th>
                         <th>Item</th>
                         <th>Money</th>
+                        <th>Date</th>
                     </tr>
                    </thead>
                    <tbody>
@@ -27,6 +28,7 @@
                         <td>{{$donation->name}}</td>
                         <td>{{$donation->item}}</td>
                         <td>{{$donation->money}}</td>
+                        <td>{{$donation->donationDate}}</td>
                      </tr>
                      
                     @endforeach

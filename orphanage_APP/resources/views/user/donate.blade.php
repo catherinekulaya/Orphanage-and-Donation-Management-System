@@ -40,8 +40,8 @@
                             <textarea name="description" class="form-control"></textarea>
                         </div>
                         <div class="center">
-                            <a href="/"  class="btn btn-primary">C ancel</a>
                             <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="/"  class="btn btn-primary">Cancel</a>
                         </div>
 
                         <script>

@@ -10,7 +10,7 @@
 .center {
     text-align: center;
 }
-<<<<<<< Updated upstream
+
 
 .content {
     width: 500px;
@@ -32,5 +32,8 @@
     height: 300px;
     margin-top: 30px;
   }
-=======
->>>>>>> Stashed changes
+
+
+  .form-size {
+      width: 20px;
+  }

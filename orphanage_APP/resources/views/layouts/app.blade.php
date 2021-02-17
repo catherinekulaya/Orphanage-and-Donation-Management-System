@@ -13,7 +13,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/moment.js') }}"></script>
     <script src="{{ asset('js/chart.js') }}"></script>
-
+    <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
 
 
     <!-- Fonts -->
@@ -62,7 +62,7 @@
                             <a class="nav-link" href="/home">Dashboard <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/donations">Donations</a>
+                            <a class="nav-link" href="/view_donations">Donations</a>
 
                           </li>
                           <li class="nav-item">

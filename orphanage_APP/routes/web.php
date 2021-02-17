@@ -21,6 +21,9 @@ Route::get('donationform/', function () {
     return view('donationform');
 });
 
+Route::get('donationform/', function () {
+    return view('donationform');
+});
 
 
 
@@ -52,9 +55,28 @@ Route::get('/requiredItems', 'ItemsRequiredController@donorRequiredItems')->name
 Route::delete('/remove-donation/{id}', 'DonateController@delete')->name('remove-donation');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/payments', 'PaymentController@index')->name('payment');
+Route::get('/expenses', 'ExpensesController@index')->name('expenses');
+Route::get('/donations', 'Donor123Controller@index')->name('donations');
+Route::get('/itemsrequested', 'ItemsrequestedController@index')->name('itemsrequested');
+Route::get('/orphans','OrphanController@index' )->name('orphans');
+
+Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
+Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
 
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/orphans/create', 'OrphanController@create')->name('create-orphans');
+Route::get('/orphans/edit/{id}', 'OrphanController@update')->name('edit-orphans');
 
-Route::get('/user', 'UserController@index')->name('user');
-Auth::routes();
+
+Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
+Route::get('/itemsrequested/edit/{id}', 'ItemsrequestedController@update')->name('edit-itemsrequested');
+
+Route::get('form','DonateController@index');
+Route::post('/submit','DonateController@store');
+
+Route::get('/view_donations', 'DonateController@retrieve');
+
+
+
+ 

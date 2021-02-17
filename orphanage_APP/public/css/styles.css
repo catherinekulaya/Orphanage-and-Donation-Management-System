@@ -11,6 +11,7 @@
     text-align: center;
 }
 
+
 .content {
     width: 500px;
     height: 300px;
@@ -31,6 +32,7 @@
     height: 300px;
     margin-top: 30px;
   }
+
 
   .form-size {
       width: 20px;

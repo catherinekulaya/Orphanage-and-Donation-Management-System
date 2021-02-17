@@ -21,6 +21,9 @@ Route::get('donationform/', function () {
     return view('donationform');
 });
 
+Route::get('donationform/', function () {
+    return view('donationform');
+});
 
 
 
@@ -49,12 +52,16 @@ Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
 Route::get('/donations', 'Donor123Controller@index')->name('donations');
 Route::get('/itemsrequested', 'ItemsrequestedController@index')->name('itemsrequested');
+Route::get('/orphans','OrphanController@index' )->name('orphans');
 
 Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
 Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
 
 Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
 Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');
+
+Route::get('/orphans/create', 'OrphanController@create')->name('create-orphans');
+Route::get('/orphans/edit/{id}', 'OrphanController@update')->name('edit-orphans');
 
 
 Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
@@ -64,5 +71,7 @@ Route::get('form','DonateController@index');
 Route::post('/submit','DonateController@store');
 
 Route::get('/view_donations', 'DonateController@retrieve');
+
+
 
  

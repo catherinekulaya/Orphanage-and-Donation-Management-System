@@ -68,6 +68,10 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#">Schedule</a>
                           </li>
+                         
+                          <li class="nav-item">
+                            <a class="nav-link" href="/orphans">Orphans</a>
+                          </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/itemsrequested">Items Requested</a>
                           </li>
@@ -79,7 +83,7 @@
                           </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                  <img src={{ url('/images/user.png') }}/>
+                                  <img src={{ url('/images/user.png') }}>
                                     {{ Auth::user()->name }}
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

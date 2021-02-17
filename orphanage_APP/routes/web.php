@@ -55,6 +55,7 @@ Route::get('/expenses/create', 'ExpensesController@create')->name('create-expens
 Route::post('/expenses/create', 'ExpensesController@store');
 Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
 Route::post('/expenses/edit/{id}', 'ExpensesController@edit');
+Route::delete('/expenses/delete/{id}', 'ExpensesController@destroy');
 
 Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
 Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');

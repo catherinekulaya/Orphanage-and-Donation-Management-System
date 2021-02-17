@@ -18,7 +18,7 @@ class ItemsRequiredController extends Controller
         return view('itemsrequested', [
           'items' => $items,
         ]);
-      }
+    }
 
     public function store() {
         $item = new RequiredItem();
@@ -28,7 +28,6 @@ class ItemsRequiredController extends Controller
         $item->save();
 
         return redirect('/itemsrequested')->with('response', 'Item Added Successfully');
-
       }
 
       public function destroy($id) {

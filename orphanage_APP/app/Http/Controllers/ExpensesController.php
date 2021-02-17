@@ -2,36 +2,35 @@
 
 namespace App\Http\Controllers;
 
+use App\Expenses;
 use Illuminate\Http\Request;
 
 class ExpensesController extends Controller
 {
     public function index()
     {
-        $expenses = [
-            ['supervisedBy' => 'John Alex', 'expenseName' => 'Fixed Expense', 'amount' => '24,000', 'description' => '1 kg of Rice', 'date' => '26 Jan 2021'],
-            ['supervisedBy' => 'Catherine Stones', 'expenseName' => 'Variable Expense', 'amount' => '55,000', 'description' => '4 liters of oil', 'date' => '2 Feb 2021'],
-            ['supervisedBy' => 'Alan Smith', 'expenseName' => 'Periodic Expense', 'amount' => '240,000', 'description' => '12 dozen of books', 'date' => '31 Jan 2021'],
-            ['supervisedBy' => 'John Alex', 'expenseName' => 'Fixed Expense', 'amount' => '24,000', 'description' => '1 kg of Rice', 'date' => '26 Jan 2021'],
-            ['supervisedBy' => 'Catherine Stones', 'expenseName' => 'Variable Expense', 'amount' => '55,000', 'description' => '4 liters of oil', 'date' => '2 Feb 2021'],
-            ['supervisedBy' => 'Alan Smith', 'expenseName' => 'Periodic Expense', 'amount' => '240,000', 'description' => '12 dozen of books', 'date' => '31 Jan 2021'],
-            ['supervisedBy' => 'John Alex', 'expenseName' => 'Fixed Expense', 'amount' => '24,000', 'description' => '1 kg of Rice', 'date' => '26 Jan 2021'],
-            ['supervisedBy' => 'Catherine Stones', 'expenseName' => 'Variable Expense', 'amount' => '55,000', 'description' => '4 liters of oil', 'date' => '2 Feb 2021'],
-            ['supervisedBy' => 'Alan Smith', 'expenseName' => 'Periodic Expense', 'amount' => '240,000', 'description' => '12 dozen of books', 'date' => '31 Jan 2021'],
-            ['supervisedBy' => 'John Alex', 'expenseName' => 'Fixed Expense', 'amount' => '24,000', 'description' => '1 kg of Rice', 'date' => '26 Jan 2021'],
-            ['supervisedBy' => 'Catherine Stones', 'expenseName' => 'Variable Expense', 'amount' => '55,000', 'description' => '4 liters of oil', 'date' => '2 Feb 2021'],
-            ['supervisedBy' => 'Alan Smith', 'expenseName' => 'Periodic Expense', 'amount' => '240,000', 'description' => '12 dozen of books', 'date' => '31 Jan 2021'],
-            ['supervisedBy' => 'John Alex', 'expenseName' => 'Fixed Expense', 'amount' => '24,000', 'description' => '1 kg of Rice', 'date' => '26 Jan 2021'],
-            ['supervisedBy' => 'Catherine Stones', 'expenseName' => 'Variable Expense', 'amount' => '55,000', 'description' => '4 liters of oil', 'date' => '2 Feb 2021'],
-            ['supervisedBy' => 'Alan Smith', 'expenseName' => 'Periodic Expense', 'amount' => '240,000', 'description' => '12 dozen of books', 'date' => '31 Jan 2021'],
-            ['supervisedBy' => 'John Alex', 'expenseName' => 'Fixed Expense', 'amount' => '24,000', 'description' => '1 kg of Rice', 'date' => '26 Jan 2021'],
-            ['supervisedBy' => 'Catherine Stones', 'expenseName' => 'Variable Expense', 'amount' => '55,000', 'description' => '4 liters of oil', 'date' => '2 Feb 2021'],
-            ['supervisedBy' => 'Alan Smith', 'expenseName' => 'Periodic Expense', 'amount' => '240,000', 'description' => '12 dozen of books', 'date' => '31 Jan 2021'],
-
-
-        ];
+        $expenses = Expenses::latest()->get();      
         return view('expenses', ['expenses' => $expenses]);
     }
+
+    public function store() {
+        $expenses = new Expenses();
+        $expenses->expenseName = request('expenseName');
+        $expenses->expenseType = request('expenseType');
+        $expenses->desc = request('desc');
+        $expenses->amount = request('amount');
+        $expenses->date = request('date');
+        $expenses->save();
+
+        return redirect('/expenses')->with('response', 'Expense Added Successfully');
+    }
+
+    // public function show($id) {
+    //     $expense = Expenses::findOrFail($id);
+    //     return view('operations.edit-expense', ['expense' => $expense]);
+    // }
+
+
 
     public function create()
     {
@@ -39,9 +38,31 @@ class ExpensesController extends Controller
         return view('operations.create-expense');
     }
 
-    public function update()
+    public function update($id)
     {
-      
+        $expense = Expenses::findOrFail($id);
+        return view('operations.edit-expense', ['expense' => $expense]);
         return view('operations.edit-expense');
     }
+
+    public function edit(Request $request, $id) {
+        $expenses = Expenses::find($id);
+        $expenses->expenseName = request('expenseName');
+        $expenses->expenseType = request('expenseType');
+        $expenses->desc = request('desc');
+        $expenses->amount = request('amount');
+        $expenses->date = request('date');
+        $expenses->save();
+
+        return redirect('/expenses')->with('response', 'Expenses Edited Successfully');
+
+      }
+
+      public function destroy($id) {
+        $expense = Expenses::findOrFail($id);
+        $expense->delete();
+        return redirect('/expenses')->with('response', 'Expense Deleted');;
+      }
+
+    
 }

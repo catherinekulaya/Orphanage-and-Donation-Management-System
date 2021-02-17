@@ -29,10 +29,7 @@
                     <div class="form-group">
                         <label>Description</label>
                         <textarea class="form-control"></textarea>
-                    </div>
-                  
-                  
-                    
+                    </div>            
                     <div class="center">
                     <a class="btn btn-primary" href="/expenses">Cancel</a>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -40,8 +37,8 @@
                   </form>
             </div>
           </div>
-        
-       
+
+
     </div>
 
 

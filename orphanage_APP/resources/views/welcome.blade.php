@@ -85,7 +85,7 @@ a {
   display: inline-block;
   margin: 20px;
   position: relative;
-  text-decoration: none;
+  text-decoration: wheat;
 }
 
 .donate {
@@ -93,10 +93,10 @@ a {
   background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
               -webkit-linear-gradient(left, lighten(#7e5959, 15%) 0%, #ff0000 50%, lighten(#00684d, 15%) 100%);
   background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),
-              linear-gradient(to right, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
+              linear-gradient(to right, lighten(#1eff00, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
   background-position: 0 0;
   background-size: 200% 100%;
-  border-radius: 4px;
+  border-radius: 30px;
   color: #fff;
   padding: 15px 65px 15px 15px;
   left: 600px;
@@ -166,12 +166,7 @@ color: white;" href="{{url('/service')}}">SERVICE</a>
             </div>
             <div class="links">
 
-                    <!-- <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a> -->
+                 
             </div>
 
 
@@ -179,8 +174,8 @@ color: white;" href="{{url('/service')}}">SERVICE</a>
             <div class="welcome">
 
                 <marquee width="100%" direction="left" height="100px"style="color: #ff0000;"><strong style="font-size: 40px;">Welcome to Orphanage and Donation Management System!</marquee>
-<h2 style="color: #ffffff;"><strong style="font-size: 23px;">Orphanage and Donation Management System is an online system that aims to digitize orphanage centers to conduct more reliable processes and management such as request for donations, easy donors payment through e-payments, system make process to be easy for Admins on management of Orphanage centers. </h2>
-    <a href="{{url('/donationform')}}" class="donate" class="after" style="color: #ff0000;href="><strong style="font-size: 50px;"> DONATE</a>
+<h2 style="color: #ffffff;"><strong style="font-size: 23px;">Orphanage and Donation Management System is an online system that aims to digitize orphanage centers to conduct more reliable processes and management such as request for donations, easy donors payment through e-payments, system make process to be easy for Admins on management of Orphanage centers.</h2>
+    <a href="{{url('/donationform')}}" class="donate" class="after" style="color: #ff0000;href="><strong style="font-size: 50px;">DONATE</a>
 
                 </div>
 

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DonateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,13 +27,7 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
-
-Route::get('/contact-us',function(){
-    return view('contact-us');
-});
-
-
-Route::get('/service',function(){
+Route::get('/service', function () {
     return view('service');
 });
 
@@ -52,9 +45,27 @@ Route::get('/requiredItems', 'ItemsRequiredController@donorRequiredItems')->name
 Route::delete('/remove-donation/{id}', 'DonateController@delete')->name('remove-donation');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/payments', 'PaymentController@index')->name('payment');
+Route::get('/expenses', 'ExpensesController@index')->name('expenses');
+Route::get('/donations', 'Donor123Controller@index')->name('donations');
+Route::get('/itemsrequested', 'ItemsRequiredController@index');
+
+Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
+Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
+
+Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
+Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');
 
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
+Route::post('/itemsrequested/create', 'ItemsRequiredController@store')->name('Required Items');
+Route::get('/itemsrequested/edit/{id}', 'ItemsRequiredController@show');
+Route::post('/itemsrequested/update/{id}', 'ItemsRequiredController@update');
+Route::delete('/itemsrequested/delete/{id}', 'ItemsRequiredController@destroy');
 
-Route::get('/user', 'UserController@index')->name('user');
-Auth::routes();
+
+Route::get('form','DonateController@index');
+Route::post('/submit','DonateController@store');
+
+Route::get('/view_donations', 'DonateController@retrieve');
+

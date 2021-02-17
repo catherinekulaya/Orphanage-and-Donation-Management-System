@@ -13,7 +13,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/moment.js') }}"></script>
     <script src="{{ asset('js/chart.js') }}"></script>
-
+    <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
 
 
     <!-- Fonts -->
@@ -46,6 +46,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        {{-- TODO: Remove Logi and Register in The Navbar --}}
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -61,13 +62,14 @@
                             <a class="nav-link" href="/home">Dashboard <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Donations</a>
+                            <a class="nav-link" href="/view_donations">Donations</a>
+
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Schedule</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Items Requested</a>
+                            <a class="nav-link" href="/itemsrequested">Items Requested</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/expenses">Expenses</a>

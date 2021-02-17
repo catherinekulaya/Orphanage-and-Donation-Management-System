@@ -90,17 +90,17 @@
 }
 
 ::-webkit-input-placeholder {
-   color: #cdcdcd;
+   color: #000000;
    font-size: 15px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #cdcdcd;
+   color: #000000;
    font-size: 15px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #cdcdcd;
+   color: #000000;
    font-size: 15px;
 }
 
@@ -290,7 +290,7 @@
 	position: absolute;
 	top: 335px;
 	left: 15px;
-	right: 15px;
+	right: 16px;
 	font-size: 16px;
 
 	-webkit-transition: all 0.15s ease-out;
@@ -352,6 +352,19 @@
                           </div>
 
                           <div class="confirm">
+
+
+                            @if(isset($donations))
+    @foreach($donations as $data)
+        <tr>
+            <td> {{$data->id}} </td>
+            <td> {{$data->firstname}} </td>
+            <td> {{$data->lastname}} </td>
+            <td> {{$data->amount}} </td>
+            <td> {{$data->email}} </td>
+         </tr>
+     @endforeach
+@endif
 
                           </div>
 

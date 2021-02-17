@@ -8,27 +8,27 @@
                 <form>
                     <div class="form-group">
                       <label>Expense Name</label>
-                      <input type="text" class="form-control">
+                      <input type="text" name="expenseName" id="expenseName" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Expense Type</label>
-                        <select class="form-control">
-                          <option>Fixed Expenses</option>
-                          <option>Variable Expenses</option>
-                          <option>Periodic Expense</option>
+                        <select class="form-control" name="expenseType">
+                          <option value="Fixed Expenses">Fixed Expenses</option>
+                          <option value="Variable Expenses">Variable Expenses</option>
+                          <option value="Periodic Expenses">Periodic Expenses</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Amount</label>
-                        <input type="text" class="form-control">
+                        <input type="number" name="amount" id="amount" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Incurred on</label>
-                        <input type="date" class="form-control">
+                        <input type="date" name="date" id="date" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea class="form-control" name="desc" id="desc"></textarea>
                     </div>            
                     <div class="center">
                     <a class="btn btn-primary" href="/expenses">Cancel</a>

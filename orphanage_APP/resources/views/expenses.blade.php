@@ -16,10 +16,10 @@
       <tr>
         <th scope="col">No</th>
         <th scope="col">Expense Name</th>
-        <th scope="col">Description</th>
+        <th scope="col">Expense Type</th>
         <th scope="col">Amount</th>
         <th scope="col">Date of payment</th>
-        <th scope="col">supervised By</th>
+        <th scope="col">Description</th>
         <th scope="col">Options</th>
       </tr>
     </thead>
@@ -28,12 +28,12 @@
       <tr>
         <th scope="row"> {{ $loop->index+1 }}</th>
         <td> {{ $expense['expenseName']}}</td>
-        <td> {{ $expense['description']}}</td>
+        <td> {{ $expense['expenseType']}}</td>
         <td> {{ $expense['amount']}}</td>
         <td> {{ $expense['date']}}</td>
-        <td> {{ $expense['supervisedBy']}}</td>
+        <td> {{ $expense['desc']}}</td>
         <td> 
-          <a class="btn btn-primary btn-sm" href="/expenses/edit/34">Edit</a>
+          <a class="btn btn-primary btn-sm" href="/expenses/edit/{{ $expense->id }}">Edit</a>
           <a class="btn btn-danger btn-sm">Delete</a>
         </td>
       </tr>

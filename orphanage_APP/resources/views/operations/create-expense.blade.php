@@ -5,7 +5,8 @@
         <div class="card">
             <div class="card-body">
                 <h3 class="center">Add Expense</h3>
-                <form>
+                <form action="/expenses/create" method="POST">
+                    @csrf
                     <div class="form-group">
                       <label>Expense Name</label>
                       <input type="text" name="expenseName" id="expenseName" class="form-control">

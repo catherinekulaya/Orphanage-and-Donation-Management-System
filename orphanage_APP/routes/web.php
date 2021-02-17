@@ -52,6 +52,8 @@ Route::get('/donations', 'Donor123Controller@index')->name('donations');
 Route::get('/itemsrequested', 'ItemsRequiredController@index');
 
 Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
+Route::post('/expenses/create', 'ExpensesController@store');
+
 Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
 
 Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');

@@ -23,9 +23,20 @@ Route::get('/about-us',function(){
 });
 
 
+Route::get('/contact-us',function(){
+    return view('contact-us');
+});
+
+
 Route::get('/service',function(){
     return view('service');
 });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::get('/user', 'UserController@index')->name('user');
+Auth::routes();

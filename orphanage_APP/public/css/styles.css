@@ -1,0 +1,37 @@
+.home-container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    width: 500px;
+    height: 300px;
+    margin: 0px auto;
+    transform: translateY(65%);
+    -webkit-transform: translateY(65%);
+    -moz-transform: translateY(65%);
+    -ms-transform: translateY(65%);
+    -o-transform: translateY(65%);
+  }
+
+  .donation-btn {
+      width: 200px;
+  }
+
+  .donation-card {
+    width: 500px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .form-size {
+      width: 20px;
+  }

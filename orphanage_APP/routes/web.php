@@ -42,14 +42,14 @@ Auth::routes();
 Route::get('/', 'DonorController@index')->name('home');
 Route::get('/donate', 'DonorController@donateForm')->name('Make Donations');
 Route::get('/donaterequired/{items}', 'DonorController@donateRequiredForm')->name('Donate Required Item');
-Route::get('/requiredItems', 'ItemsRequiredController@index')->name('Items Required');
+Route::get('/requiredItems', 'ItemsRequiredController@donorRequiredItems')->name('Items Required');
 Route::delete('/remove-donation/{id}', 'DonateController@delete')->name('remove-donation');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
 Route::get('/donations', 'Donor123Controller@index')->name('donations');
-Route::get('/itemsrequested', 'ItemsrequestedController@index')->name('itemsrequested');
+Route::get('/itemsrequested', 'ItemsRequiredController@index');
 
 Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
 Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
@@ -59,11 +59,14 @@ Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-dona
 
 
 Route::get('/itemsrequested/create', 'ItemsrequestedController@create')->name('create-itemsrequested');
-Route::get('/itemsrequested/edit/{id}', 'ItemsrequestedController@update')->name('edit-itemsrequested');
+Route::post('/itemsrequested/create', 'ItemsRequiredController@store')->name('Required Items');
+Route::get('/itemsrequested/edit/{id}', 'ItemsRequiredController@show');
+Route::post('/itemsrequested/update/{id}', 'ItemsRequiredController@update');
+Route::delete('/itemsrequested/delete/{id}', 'ItemsRequiredController@destroy');
+
 
 Route::get('form','DonateController@index');
 Route::post('/submit','DonateController@store');
 
 Route::get('/view_donations', 'DonateController@retrieve');
 
- 

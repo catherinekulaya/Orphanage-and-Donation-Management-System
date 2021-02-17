@@ -25,6 +25,11 @@ class ExpensesController extends Controller
         return redirect('/expenses')->with('response', 'Expense Added Successfully');
     }
 
+    // public function show($id) {
+    //     $expense = Expenses::findOrFail($id);
+    //     return view('operations.edit-expense', ['expense' => $expense]);
+    // }
+
 
 
     public function create()
@@ -33,11 +38,25 @@ class ExpensesController extends Controller
         return view('operations.create-expense');
     }
 
-    public function update()
+    public function update($id)
     {
-      
+        $expense = Expenses::findOrFail($id);
+        return view('operations.edit-expense', ['expense' => $expense]);
         return view('operations.edit-expense');
     }
+
+    public function edit(Request $request, $id) {
+        $expenses = Expenses::find($id);
+        $expenses->expenseName = request('expenseName');
+        $expenses->expenseType = request('expenseType');
+        $expenses->desc = request('desc');
+        $expenses->amount = request('amount');
+        $expenses->date = request('date');
+        $expenses->save();
+
+        return redirect('/expenses')->with('response', 'Expenses Edited Successfully');
+
+      }
 
     
 }

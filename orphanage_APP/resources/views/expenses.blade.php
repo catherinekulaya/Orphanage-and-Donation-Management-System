@@ -10,6 +10,21 @@
       <a class="btn btn-primary btn-sm" href="/expenses/create">Add Expense</a>
     </div>
   </div>
+  @if (session('response'))
+  <div class="row center">
+      <div class="col-sm-3">
+      </div>
+      <div class="alert alert-success col-sm-5" id="success-alert" role="alert">
+          {{ session('response') }}
+      </div>
+  </div>
+@endif
+
+<script>
+  $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+      $("#success-alert").slideUp(500);
+  });
+</script>
 <br>
   <table class="table table-hover table-bordered table-responsive-sm">
     <thead>
@@ -33,8 +48,16 @@
         <td> {{ $expense['date']}}</td>
         <td> {{ $expense['desc']}}</td>
         <td> 
-          <a class="btn btn-primary btn-sm" href="/expenses/edit/{{ $expense->id }}">Edit</a>
-          <a class="btn btn-danger btn-sm">Delete</a>
+          <div class="row">
+            <a class="btn btn-primary btn-sm"
+                href="/expenses/edit/{{ $expense->id }}">Edit</a> &nbsp;
+            <form class="form-size" action="/expenses/delete/{{ $expense->id }}"
+                method="POST">
+                <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete?')">Delete</button>
+                @csrf
+                @method('DELETE')
+            </form>
+        </div>
         </td>
       </tr>
       @endforeach

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="home-container">
+    <div class="container donation-card">
         <div class="card">
             <div class="card-body">
                 <h3 class="center">Add Expense</h3>
@@ -32,7 +32,11 @@
                     </div>
                   
                   
+                    
+                    <div class="center">
+                    <a class="btn btn-primary" href="/expenses">Cancel</a>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                   </form>
             </div>
           </div>

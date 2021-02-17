@@ -12,6 +12,7 @@
                                             <div class = "container box" style="text-align: center;">
                                             <h2> ORPHANAGE DONATION REGISTRATION PAGE</h2>
                                             
+                                            
                                             </div>
                                             
                   </br>

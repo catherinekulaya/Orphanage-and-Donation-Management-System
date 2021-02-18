@@ -38,6 +38,10 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/item123', function () {
+    return view('item123');
+});
+
 
 
 Auth::routes();

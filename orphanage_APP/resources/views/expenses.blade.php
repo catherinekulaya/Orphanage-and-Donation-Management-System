@@ -31,13 +31,13 @@
       <tr>
         <th scope="col">No</th>
         <th scope="col">Expense Name</th>
-        <th scope="col">Expense Type</th>
-        <th scope="col">Amount</th>
-        <th scope="col">Date of payment</th>
+<<<<<<< HEAD
         <th scope="col">Description</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Description</th>
+>>>>>>> 812ad35a6b8b4b27f305fede468fa59343fbf664
         <th scope="col">Options</th>
       </tr>
-    </thead>
     <tbody>
       @foreach($expenses as $expense)
       <tr>

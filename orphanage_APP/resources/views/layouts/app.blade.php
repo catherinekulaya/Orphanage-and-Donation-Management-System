@@ -56,21 +56,21 @@
                         <ul class="nav flex-column">
                             <li class="nav-item active">
                              
-                                <a class="nav-link" href="/home"> <i class="fa fa-copy"></i>Dashboard <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/home"> <i class="fa fa-th-large"></i>Dashboard <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/view_donations">Donations</a>
+                                <a class="nav-link" href="/view_donations"><i class="fa fa-medkit"></i>Donations</a>
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Schedule</a>
+                                <a class="nav-link" href="#"><i class="fa fa-calendar"></i>Schedule</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/orphans">Orphans</a>
+                                <a class="nav-link" href="/orphans"><i class="fa fa-users"></i>Orphans</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/itemsrequested">Items Requested</a>
+                                <a class="nav-link" href="/itemsrequested"><i class="fa fa-tasks"></i>Items Requested</a>
                             </li>
 
                         </ul>
@@ -84,10 +84,10 @@
                         </h6>
                         <ul class="nav flex-column mb-2">
                             <li class="nav-item">
-                                <a class="nav-link" href="/expenses">Expenses</a>
+                                <a class="nav-link" href="/expenses"><i class="fa fa-money"></i>Expenses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/payments">Payments</a>
+                                <a class="nav-link" href="/payments"><i class="fa fa-bank"></i>Payments</a>
                             </li>
                             
                         </ul>
@@ -103,7 +103,7 @@
                         <li>
                           <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                           document.getElementById('logout-form').submit();">
-                              {{ __('Logout') }}
+                             <i class="fa fa-sign-out"></i> {{ __('Logout') }}
                           </a>
 
                           <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

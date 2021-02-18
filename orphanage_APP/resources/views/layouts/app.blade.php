@@ -55,7 +55,8 @@
                         </h6>
                         <ul class="nav flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href="/home">Dashboard <span class="sr-only">(current)</span></a>
+                             
+                                <a class="nav-link" href="/home"> <i class="fa fa-copy"></i>Dashboard <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/view_donations">Donations</a>
@@ -88,19 +89,29 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/payments">Payments</a>
                             </li>
-
-                            <li>
-                              <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
-                              document.getElementById('logout-form').submit();">
-                                  {{ __('Logout') }}
-                              </a>
-  
-                              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                  @csrf
-                              </form>
-                            </li>
                             
                         </ul>
+                        <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>USER</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+
+                        <li>
+                          <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+                              {{ __('Logout') }}
+                          </a>
+
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                              @csrf
+                          </form>
+                        </li>
+                        
+                    </ul>
                     </div>
                 </nav>
 

@@ -40,7 +40,7 @@
     <br>
     <div class="row align-items-center center">
         <div class="col">
-            <a href="/requiredItems" class="btn btn-primary  donation-btn btn-sm">View Items Required</a>
+            <a href="/item123" class="btn btn-primary  donation-btn btn-sm">View Items Required</a>
         </div>
     </div>
 </div>

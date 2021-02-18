@@ -1,0 +1,4 @@
+{
+    "php.suggest.basic": true,
+    "php.validate.enable": false
+}

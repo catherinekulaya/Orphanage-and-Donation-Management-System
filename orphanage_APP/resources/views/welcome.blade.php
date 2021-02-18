@@ -148,6 +148,7 @@ position: fixed;">
 
                         <a style="
 color: white;" href="{{ url('/home') }}">Home</a>
+
                     @else
                         <a style="
 color: white;"  href="{{ route('login') }}">Login</a>
@@ -155,20 +156,27 @@ color: white;"  href="{{ route('login') }}">Login</a>
                         @if (Route::has('register'))
                             <a style="
 color: white;"  href="{{ route('register') }}">Register</a>
+
                         @endif
                     @endauth
 
             @endif
             <a style="
 color: white;"  href="{{ url('/about-us') }}">ABOUT-US</a>
+
                     <a style="
 color: white;" href="{{url('/service')}}">SERVICE</a>
+ 
             </div>
             <div class="links">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                 
+                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://vapor.laravel.com">Vapor</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a> -->
             </div>
-
 
 
             <div class="welcome">

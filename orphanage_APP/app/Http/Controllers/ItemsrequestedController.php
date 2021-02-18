@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class ItemsrequestedController extends Controller
 {
+<<<<<<< HEAD
     public function index()
     {
         $itemsrequested = [
@@ -24,6 +25,8 @@ class ItemsrequestedController extends Controller
 
         return view('itemsrequested', ['itemsrequested' => $itemsrequested]);
     }
+=======
+>>>>>>> 812ad35a6b8b4b27f305fede468fa59343fbf664
 
     public function create()
     {

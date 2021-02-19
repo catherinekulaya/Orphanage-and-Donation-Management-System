@@ -53,6 +53,7 @@ Route::get('/requiredItems', 'ItemsRequiredController@donorRequiredItems')->name
 
 
 
+
 Auth::routes();
 Route::get('/', 'DonorController@index')->name('home');
 Route::get('/donate', 'DonorController@do nateForm')->name('Make Donations');
@@ -76,7 +77,6 @@ Route::get('/orphans','OrphanController@index' )->name('orphans');
 
 Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
 Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
-
 
 Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
 Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');

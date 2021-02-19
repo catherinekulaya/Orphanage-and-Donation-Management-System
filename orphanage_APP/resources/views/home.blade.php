@@ -22,7 +22,7 @@
             <div class="col-sm">
                 <div class="card" >
                     <div class="card-body">
-                        <h5 class="card-title">Items Required</h5>
+                        <h5 class="card-title" href="{{url(/itemsrequired)}}">Items Required</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ $requiredItems }}</h6>
                     </div>
                 </div>

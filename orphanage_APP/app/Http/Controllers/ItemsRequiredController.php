@@ -24,10 +24,10 @@ class ItemsRequiredController extends Controller
         $item = new RequiredItem();
         $item->itemName = request('itemName');
         $item->quantity = request('quantity');
-        $item->date = request('date');
+        $item->orphanageCenter = request('oc');
         $item->save();
 
-        return redirect('/itemsrequested')->with('response', 'Item Added Successfully');
+        return redirect('/itemsrequired')->with('response', 'Item Added Successfully');
       }
 
       public function destroy($id) {
@@ -45,7 +45,7 @@ class ItemsRequiredController extends Controller
         $item = RequiredItem::find($id);
         $item->itemName = request('itemName');
         $item->quantity = request('quantity');
-        $item->date = request('date');
+        $item->date = request('oc');
         $item->save();
 
         return redirect('/itemsrequested')->with('response', 'Item Edited Successfully');

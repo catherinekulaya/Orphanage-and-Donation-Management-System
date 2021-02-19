@@ -20,12 +20,6 @@ Route::get('donationform/', function () {
     return view('donationform');
 });
 
-Route::get('donationform/', function () {
-    return view('donationform');
-});
-
-
-
 Route::get('/about-us', function () {
     return view('about-us');
 });
@@ -34,13 +28,10 @@ Route::get('/service', function () {
     return view('service');
 });
 
-Route::get('/test', function () {
-    return view('test');
-});
-
 Route::get('/item123', function () {
     return view('item123');
 });
+
 
 
 
@@ -67,7 +58,6 @@ Route::get('/orphans','OrphanController@index' )->name('orphans');
 
 Route::get('/expenses/create', 'ExpensesController@create')->name('create-expenses');
 Route::get('/expenses/edit/{id}', 'ExpensesController@update')->name('edit-expenses');
-
 
 Route::get('/donations/create', 'Donor123Controller@create')->name('create-donations');
 Route::get('/donations/edit/{id}', 'Donor123Controller@update')->name('edit-donations');

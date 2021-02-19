@@ -56,6 +56,10 @@ Route::get('/payments', 'PaymentController@index')->name('payment');
 Route::get('/expenses', 'ExpensesController@index')->name('expenses');
 Route::get('/donations', 'Donor123Controller@index')->name('donations');
 
+Route::get('/schedule', 'ScheduleController@index')->name('schedule');
+Route::get('/schedule/create', 'ScheduleController@create')->name('create-schedule');
+Route::get('/schedule/edit/{id}', 'ScheduleController@update')->name('edit-schedule');
+
 Route::get('/itemsrequested', 'ItemsRequiredController@index');
 
 Route::get('/orphans','OrphanController@index' )->name('orphans');
@@ -96,5 +100,5 @@ Route::get('/view_donations', 'DonateController@retrieve');
 
 
 
- 
+
 

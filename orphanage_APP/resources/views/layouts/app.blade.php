@@ -55,17 +55,15 @@
                         </h6>
                         <ul class="nav flex-column">
                             <li class="nav-item active">
-                             
+
                                 <a class="nav-link" href="/home"> <i class="fa fa-th-large"></i>Dashboard <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/view_donations"><i class="fa fa-medkit"></i>Donations</a>
-
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-calendar"></i>Schedule</a>
+                           <li class="nav-item">
+                                <a class="nav-link" href="/schedule"><i class="fa fa-bank"></i>Schedule</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/orphans"><i class="fa fa-users"></i>Orphans</a>
                             </li>
@@ -89,7 +87,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/payments"><i class="fa fa-bank"></i>Payments</a>
                             </li>
-                            
+
                         </ul>
                         <h6
                         class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -110,7 +108,7 @@
                               @csrf
                           </form>
                         </li>
-                        
+
                     </ul>
                     </div>
                 </nav>

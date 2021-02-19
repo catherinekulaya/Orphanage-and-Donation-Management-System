@@ -41,10 +41,10 @@
               <a class="nav-link" href="service">service</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="testimonial">Testimonials</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="contacts">Contacts</a>
             </li>
             {{-- This is a Temporary Link --}}
             <li class="nav-item">

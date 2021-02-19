@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -20,11 +19,10 @@ Route::get('donationform/', function () {
     return view('donationform');
 });
 
-Route::get('donationform/', function () {
-    return view('donationform');
+Route::get('item123/', function () {
+    return view('item123');
 });
-
-
+Route::get('/item123', 'item123Controller@index')->name('item123');
 
 Route::get('/about-us', function () {
     return view('about-us');
@@ -38,17 +36,28 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/item123', function () {
-    return view('item123');
+Route::get('/donateRequiredItem', function () {
+    return view('donateRequiredItem');
 });
+
+Route::get('/testimonial', function () {
+    return view('testimonial');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+
+Route::get('/requiredItems', 'ItemsRequiredController@donorRequiredItems')->name('Items Required');
 
 
 
 Auth::routes();
 Route::get('/', 'DonorController@index')->name('home');
-Route::get('/donate', 'DonorController@donateForm')->name('Make Donations');
+Route::get('/donate', 'DonorController@do nateForm')->name('Make Donations');
 Route::get('/donaterequired/{items}', 'DonorController@donateRequiredForm')->name('Donate Required Item');
-Route::get('/requiredItems', 'ItemsRequiredController@donorRequiredItems')->name('Items Required');
+
 Route::delete('/remove-donation/{id}', 'DonateController@delete')->name('remove-donation');
 
 Route::get('/home', 'HomeController@index')->name('home');

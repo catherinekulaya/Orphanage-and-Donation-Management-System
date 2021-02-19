@@ -53,7 +53,7 @@
             <div class="col-sm-6">
                 <div class="card" style="height: 250px;">
                     <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Visitation Trend in 2021</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Visitation Trend in 2020</h6>
                         @include('graphs.visitation-graph')
                     </div>
                 </div>
@@ -61,7 +61,7 @@
             <div class="col-sm-6">
                 <div class="card" style="height: 250px;">
                     <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Orphans Acquired in 2021</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Orphans Acquired in 2020</h6>
                         @include('graphs.orphans-graph')
                     </div>
                 </div>

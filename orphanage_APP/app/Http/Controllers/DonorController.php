@@ -12,7 +12,7 @@ class DonorController extends Controller
         return view('user.home');
     }
 
-    public function donateForm()
+    public function donateform()
     {
         return view('user.donate');
     }
